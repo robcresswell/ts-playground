@@ -22,6 +22,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,
+    "exactOptionalPropertyTypes": true,
     "isolatedModules": true,
     "skipLibCheck": true
   },
