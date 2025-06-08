@@ -25,16 +25,9 @@ There's a simple test framework set up, using [Vitest](https://vitest.dev/). Run
 
 - I really recommend [fnm](https://github.com/Schniz/fnm) for managing node
   versions. It's a lot faster than nvm (fast enough to have it in your shell)
-  and supports the `.node-version` files that are sort-of-standardised.
-- There's a bunch of colors in `scripts/colors.ts` that you can use to make your
-  terminal output look nicer if you want a quick demo of something. Usage looks
-  something like
-
-  ```typescript
-  import { fgGreen, reset } from './scripts/colors.ts';
-
-  console.log(`${fgGreen}This is green${reset}`);
-  ```
+  and supports the `.node-version` files that are sort-of-standardised
+- If you want colors in your terminal, use
+  [yoctocolors](http://npmjs.com/yoctocolors)
 
 ## Why?
 
