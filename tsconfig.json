@@ -24,7 +24,8 @@
     "allowSyntheticDefaultImports": true,
     "exactOptionalPropertyTypes": true,
     "isolatedModules": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "erasableSyntaxOnly": true
   },
   "include": ["src", "scripts", "test"]
 }
