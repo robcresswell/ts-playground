@@ -4,7 +4,7 @@
   "main": "dist/main.js",
   "type": "module",
   "scripts": {
-    "dev": "NODE_ENV=development node --watch --no-warnings=ExperimentalWarning --enable-source-maps src/main.ts",
+    "dev": "NODE_ENV=development node --watch --enable-source-maps src/main.ts",
     "build": "tsc --project tsconfig.build.json",
     "start": "NODE_ENV=production node --enable-source-maps .",
     "test": "vitest",
