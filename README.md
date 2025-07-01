@@ -1,16 +1,22 @@
 # TS Playground
 
-## Quick messing around
+> [!NOTE]
+> Requires `curl`, `tar` and [fnm](https://github.com/Schniz/fnm) to be available
 
 ```sh
-npm ci
+curl -sL https://github.com/robcresswell/ts-playground/archive/refs/heads/main.tar.gz | \
+tar -xz && \
+mv ts-playground-main ts-playground && \
+cd ts-playground && \
+fnm use && \
+npm ci --silent
 ```
 
 ```sh
-./scripts/main.ts
+node src/main.ts
 ```
 
-Now go edit `scripts/main.ts` and write some fun stuff
+Now go edit `src/main.ts` and write some fun stuff
 
 ## Writing something vaguely usable
 
@@ -21,23 +27,17 @@ to the project; run `npm run dev` to get a live reload dev server that watches
 There's a simple test framework set up, using [Vitest](https://vitest.dev/). Run
 `npm test` to run the tests.
 
-## Other tips
+## Tips
 
-- I really recommend [fnm](https://github.com/Schniz/fnm) for managing node
-  versions. It's a lot faster than nvm (fast enough to have it in your shell)
-  and supports the `.node-version` files that are sort-of-standardised
-- If you want colors in your terminal, use
-  [yoctocolors](http://npmjs.com/yoctocolors)
+- Some nice libraries for terminal output:
+  - [yoctocolors](http://npmjs.com/yoctocolors)
+  - [figures](http://npmjs.com/figures)
+  - [yocto-spinner](http://npmjs.com/yocto-spinner)
 
 ## Why?
 
-TS has a pretty serious boilerplate problem. There are lots of ongoing projects
-to improve this, but generally speaking if you want a project that builds,
-lints, formats, tests and has a live reload dev flow you need a lot of
-intertwined pieces to try and get the best setup.
-
-This repo is my attempt to make it very easy to start messing with code or
-little script demos, while also being able to evolve that code into something
-"production ready", whatever that means. It is somewhat opinionated about the
-application layer (strict TS, linting, test framework etc.) but has no opinions
-about deployment.
+JS/TS has a pretty serious boilerplate problem. There are lots of ongoing
+projects to improve this, but its a pain to keep everything up to date and
+working together. I keep this repo up to date with my personal preferences so
+that I can easily bootstrap new TS projects, either for scripting or something
+more comprehensive.
