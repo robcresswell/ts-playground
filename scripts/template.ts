@@ -4,6 +4,8 @@ async function main() {
   console.log(`Hello World!`);
 }
 
-main().catch((err) => {
+try {
+  await main();
+} catch (err) {
   console.error(err);
-});
+}
