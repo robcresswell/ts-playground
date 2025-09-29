@@ -13,7 +13,7 @@ npm ci --silent
 ```
 
 ```sh
-node src/main.ts
+node .
 ```
 
 Now go edit `src/main.ts` and write some fun stuff
@@ -29,8 +29,8 @@ There's a simple test framework set up, using [Vitest](https://vitest.dev/). Run
 
 ## Tips
 
-- Some nice libraries for terminal output:
-  - [yoctocolors](http://npmjs.com/yoctocolors)
+- Some tools for terminal output:
+  - [node:util.styleText](https://nodejs.org/api/util.html#utilstyletextformat-text-options)
   - [figures](http://npmjs.com/figures)
   - [yocto-spinner](http://npmjs.com/yocto-spinner)
 
