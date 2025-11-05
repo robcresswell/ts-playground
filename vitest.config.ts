@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitest/config';
 
-// oxlint-disable-next-line no-default-export
 export default defineConfig({
   test: {
     include: ['test/**/*.test.ts'],

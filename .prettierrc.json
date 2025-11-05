@@ -1,4 +1,5 @@
 {
+  "plugins": ["@prettier/plugin-oxc", "@ianvs/prettier-plugin-sort-imports"],
   "singleQuote": true,
   "htmlWhitespaceSensitivity": "ignore"
 }

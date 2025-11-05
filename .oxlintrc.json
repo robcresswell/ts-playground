@@ -10,9 +10,6 @@
     "explicit-function-return-type": "off"
   },
   "settings": {},
-  "env": {
-    "builtin": true
-  },
   "globals": {},
   "ignorePatterns": []
 }
