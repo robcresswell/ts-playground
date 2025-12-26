@@ -1,19 +1,14 @@
 # TS Playground
 
 > [!NOTE]
-> Requires `curl`, `tar` and [fnm](https://github.com/Schniz/fnm) to be available
+> Requires [bun](https://bun.com/docs/installation) to be installed
 
 ```sh
-curl -sL https://github.com/robcresswell/ts-playground/archive/refs/heads/main.tar.gz | \
-tar -xz && \
-mv ts-playground-main ts-playground && \
-cd ts-playground && \
-fnm use && \
-npm ci --silent
+bun install --frozen-lockfile
 ```
 
 ```sh
-node .
+bun .
 ```
 
 Now go edit `src/main.ts` and write some fun stuff
@@ -21,11 +16,11 @@ Now go edit `src/main.ts` and write some fun stuff
 ## Writing something vaguely usable
 
 When you want write some code, put stuff in `src/`. `main.ts` is the entry point
-to the project; run `npm run dev` to get a live reload dev server that watches
+to the project; run `bun dev` to get a live reload dev server that watches
 `src/` and runs `main.ts` when you save.
 
-There's a simple test framework set up, using [Vitest](https://vitest.dev/). Run
-`npm test` to run the tests.
+Run `bun test` to run the tests, using
+[Bun's built-in test runner](https://bun.com/docs/test).
 
 ## Tips
 

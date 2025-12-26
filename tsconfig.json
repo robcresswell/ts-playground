@@ -3,27 +3,32 @@
     "outDir": "./dist",
     "target": "ES2024",
     "lib": ["ES2024"],
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "pretty": true,
     "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
+    "declaration": false,
     "importHelpers": true,
     "strict": true,
+    "esModuleInterop": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
     "forceConsistentCasingInFileNames": true,
-    "exactOptionalPropertyTypes": true,
+    "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
     "skipLibCheck": true,
-    "erasableSyntaxOnly": true,
     "verbatimModuleSyntax": true,
-    "rewriteRelativeImportExtensions": true
+    "erasableSyntaxOnly": true,
+    "rewriteRelativeImportExtensions": true,
+    "noEmit": true,
+    "types": ["bun"],
+    "paths": {
+      "~/*": ["./src/*"]
+    }
   },
-  "include": ["src", "scripts", "test"]
+  "include": ["src", "scripts", "test", "prompts"],
+  "exclude": ["test/fixtures"]
 }

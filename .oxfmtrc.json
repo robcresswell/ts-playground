@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": [
+    "**/__snapshots__/**",
+    "test/fixtures/**",
+    "bun.lock",
+    "docs/**"
+  ],
+  "singleQuote": true,
+  "htmlWhitespaceSensitivity": "ignore",
+  "proseWrap": "always",
+  "printWidth": 80,
+  "experimentalSortImports": {}
+}
