@@ -1,7 +1,9 @@
-#!/usr/bin/env -S node
+#!/usr/bin/env -S bun
+
+import { $ } from 'bun';
 
 async function main() {
-  console.log(`Hello World!`);
+  await $`echo "Hello, World!"`;
 }
 
 try {
