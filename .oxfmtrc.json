@@ -8,7 +8,6 @@
   ],
   "singleQuote": true,
   "htmlWhitespaceSensitivity": "ignore",
-  "proseWrap": "always",
   "printWidth": 80,
-  "experimentalSortImports": {}
+  "sortImports": {}
 }

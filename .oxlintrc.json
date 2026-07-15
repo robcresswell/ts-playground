@@ -9,6 +9,11 @@
     "node",
     "promise"
   ],
+  "options": {
+    "typeAware": true,
+    "typeCheck": true,
+    "reportUnusedDisableDirectives": "error"
+  },
   "categories": {
     "correctness": "error",
     "suspicious": "error",
@@ -20,9 +25,6 @@
       "plugins": ["vitest"]
     }
   ],
-  "rules": {
-    "no-this-in-exported-function": "off",
-    "explicit-function-return-type": "off"
-  },
+  "rules": {},
   "ignorePatterns": []
 }

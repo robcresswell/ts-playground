@@ -1,0 +1,10 @@
+[test]
+root = "test"
+randomize = true
+coverageReporter = ["text", "lcov"]
+coverageDir = "./coverage"
+
+[install]
+# Only install package versions published at least 2 days ago
+minimumReleaseAge = 172800
+auto = "disable"

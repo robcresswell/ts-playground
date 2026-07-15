@@ -1,6 +1,6 @@
 import { myFunction } from './my-other-module.ts';
 
-async function main() {
+async function main(): Promise<void> {
   await myFunction();
 }
 
