@@ -9,7 +9,7 @@
     "build": "tsc --project tsconfig.build.json",
     "t": "AGENT=1 bun --no-orphans --no-env-file --no-addons test --parallel --concurrent",
     "coverage": "AGENT=1 bun --no-orphans --no-env-file --no-addons test --coverage --parallel --concurrent",
-    "start": "NODE_ENV=production bun --no-orphans --no-env-file --no-addons  --enable-source-maps .",
+    "start": "NODE_ENV=production bun --no-orphans --no-env-file --no-addons --enable-source-maps .",
     "lint": "bun --parallel --no-env-file 'oxlint' 'oxfmt --check'",
     "typecheck": "tsc --noEmit",
     "format": "oxfmt",
