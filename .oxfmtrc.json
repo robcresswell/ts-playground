@@ -4,7 +4,8 @@
     "**/__snapshots__/**",
     "test/fixtures/**",
     "bun.lock",
-    "docs/**"
+    "docs/**",
+    ".claude/skills/**"
   ],
   "singleQuote": true,
   "htmlWhitespaceSensitivity": "ignore",

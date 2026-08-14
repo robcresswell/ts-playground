@@ -7,10 +7,10 @@
   "scripts": {
     "dev": "NODE_ENV=development bun --no-orphans --no-addons --hot --watch --enable-source-maps .",
     "build": "tsc --project tsconfig.build.json",
-    "t": "AGENT=1 bun --no-orphans --no-env-file --no-addons test --parallel --concurrent",
-    "coverage": "AGENT=1 bun --no-orphans --no-env-file --no-addons test --coverage --parallel --concurrent",
-    "start": "NODE_ENV=production bun --no-orphans --no-env-file --no-addons  --enable-source-maps .",
-    "lint": "bun --parallel --no-env-file 'oxlint' 'oxfmt --check'",
+    "t": "AGENT=1 bun --no-orphans --no-addons test --parallel --concurrent",
+    "coverage": "AGENT=1 bun --no-orphans --no-addons test --coverage --parallel --concurrent",
+    "start": "NODE_ENV=production bun --no-orphans --no-addons  --enable-source-maps .",
+    "lint": "bun --parallel 'oxlint' 'oxfmt --check' 'typecheck'",
     "typecheck": "tsc --noEmit",
     "format": "oxfmt",
     "lint:fix": "oxlint --fix '{src,test}/**/*.{ts,json,md}' && oxfmt"
@@ -19,12 +19,12 @@
     "tslib": "^2.8.1"
   },
   "devDependencies": {
-    "@types/node": "^26.1.1",
+    "@types/node": "^26.2.0",
     "bun-types": "^1.3.14",
-    "oxfmt": "^0.59.0",
-    "oxlint": "^1.74.0",
-    "oxlint-tsgolint": "^0.24.0",
-    "typescript": "^6.0.3"
+    "oxfmt": "^0.63.0",
+    "oxlint": "^1.78.0",
+    "oxlint-tsgolint": "^7.0.2001",
+    "typescript": "^7.0.2"
   },
   "devEngines": {
     "packageManager": {

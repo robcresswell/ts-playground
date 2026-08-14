@@ -1,3 +1,5 @@
+env = false
+
 [test]
 root = "test"
 randomize = true
