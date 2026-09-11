@@ -20,7 +20,7 @@
     "verbatimModuleSyntax": true,
     "erasableSyntaxOnly": true,
     "rewriteRelativeImportExtensions": true,
-    "types": ["node", "bun-types"]
+    "types": ["bun-types"]
   },
   "include": ["src", "scripts", "test"],
   "exclude": ["test/fixtures"]
